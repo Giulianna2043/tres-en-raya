@@ -36,6 +36,6 @@ function gotoSection(_identificadorDeSeccion)
 
 	nextSection.addClass('visible');
 
-	TweenMax.from(nextSection, 1.5, {scale:0.2, opacity:0, ease:Elastic.easeOut});
+	//TweenMax.from(nextSection, 1.5, {scale:0.2, opacity:0, ease:Elastic.easeOut});
 	currentSection = nextSection;
 }
