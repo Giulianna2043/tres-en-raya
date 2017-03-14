@@ -1,6 +1,4 @@
-/**
- * Created by gerson on 10/03/17.
- */
+
 $(document).ready(init);
 
 var currentSection = null;
@@ -24,6 +22,11 @@ function onClickBtnNombre() {
 }
 function onClickBtnJuego() {
 	gotoSection('juego');
+     var jugador1=document.getElementById("jugador1");
+    var jugador2=document.getElementById("jugador2");
+    localStorage.setItem('nombre_1',jugador1.value);
+    localStorage.setItem('nombre_2',jugador2.value);
+    caremoco();
 }
 function onClickBtnNombre() {
 	gotoSection('juego');
