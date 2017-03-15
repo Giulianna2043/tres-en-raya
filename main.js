@@ -16,7 +16,7 @@ function caremoco(){
     }else{
         document.getElementById("div_turno").innerHTML="turno del jugador "+ chaujj;
     }
-    console.log(moco);
+    /*console.log(moco);*/
 }
 
 function marcar (id)
