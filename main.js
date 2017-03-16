@@ -25,26 +25,27 @@ function marcar (id)
     console.log(opciones[id]);
     if (bandera == 0 && !opciones[id])
     {
-           celda.value=turno;
-           document.getElementById("div_turno").innerHTML="turno del jugador "+ dos;
-           opciones[id]=1;
-            bandera = 1;
-            jugador=dos;
+        celda.value=turno;
+        document.getElementById("div_turno").innerHTML="turno del jugador "+ dos;
+        opciones[id]=1;
+        bandera = 1;
+        jugador=dos;
            
     }else if(bandera == 1 && !opciones[id]){
            
-           celda.value=turno2;
-           document.getElementById("div_turno").innerHTML="turno del jugador "+ uno;
-           opciones[id]=0;
-          bandera = 0;
-          jugador=uno;
+        celda.value=turno2;
+        document.getElementById("div_turno").innerHTML="turno del jugador "+ uno;
+        opciones[id]=0;
+        bandera = 0;
+        jugador=uno;
     }
     //bandera++;
     jugadorx(1);
     jugadorx(0);
 }
 
-function jugadorx(_option){
+function jugadorx(_option)
+{
    if (opciones[1]==_option && opciones [2]==_option && opciones[3]==_option){
        //alert("felicidades jugador ganaste" +turno+"ganaste");
        swal({title: "Ganaste..!",text: "felicidades " +jugador+ " ganaste",imageUrl: "img/ganaste.png"});
